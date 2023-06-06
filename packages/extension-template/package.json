@@ -1,0 +1,10 @@
+{
+ "name": "extension-template",
+ "version": "6.13.0",
+ "description": "云枢6.0-二次开发示例工程",
+ "private": false,
+ "main": "./index.ts",
+ "scripts": {},
+ "license": "MIT",
+ "publishConfig": {}
+}

@@ -1,0 +1,241 @@
+/*
+禁止修改!此文件是产品代码的一部分，后续可能变更或者不再开放。
+若有问题，请参考前端相关二开文档。
+*/
+@import "../themes/default";
+@import '~cloudpivot-list/application/src/components/pc/style/custom-themes';
+/*css 初始化 */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button {          /*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;               /*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;          /*合并外边线*/
+}
+
+
+body {
+    font-family: @font-family;
+    background: @white-background;
+    height: 100%;
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+/*link样式*/
+a,
+a:active,
+a:focus,
+a:visited,
+.link,
+.link:active,
+.link:focus,
+.link:visited{
+    color: #2970FF;
+    text-decoration: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    color: #111218;
+}
+
+s, i, em {
+    // font-style: normal;
+    font-style: italic;
+    text-decoration: none;
+}
+
+
+.ant-btn{
+    min-width: 80px;
+    padding: 0 5px;
+}
+
+.ant-input, .ant-btn{
+    border-color: #d4d5d6;
+    border: 1px solid #d4d5d6;
+}
+
+
+// 自定义主题色
+body{
+    color: #111218 !important;
+    .h3-textarea,
+    .h3-input-number,
+    .h3-organization__label.show-select
+    {
+        &:hover{
+            border-color: @borderColor !important;
+        }
+    }
+
+    .h3-textarea_focus,
+    .h3-input-number-focused,
+    .h3-organization__label.show-select:focus
+    {
+        box-shadow: 0px 0px 0px 2px @shadowColor !important;
+        border: 1px solid @borderColor !important;
+    }
+}
+
+.ant-popover-content {
+    .ant-popover-arrow{
+        display: none;
+    }
+}
+.ant-input{
+    border-radius: 2px;
+}
+.ant-modal-close-x{
+    &:hover{
+        color: @highlightColor;
+        i{
+            color: @highlightColor !important;
+        }
+    }
+    i{
+        font-size: 20px !important;
+    }
+}
+
+//暂时强行处理antd控件样式问题，等全局的修改之后删除
+ 
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled),
+.ant-btn:not(.ant-btn-primary, .ant-btn-danger, .ant-btn[disabled], .ant-btn-link):hover,
+.ant-pagination-item-active a,
+.ant-pagination-item-active,
+.ant-pagination-item:hover a,
+.ant-pagination-item:hover,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner,
+.ant-checkbox-checked .ant-checkbox-inner,
+
+.ant-radio-wrapper:hover .ant-radio, .ant-radio:hover .ant-radio-inner, .ant-radio-input:focus + .ant-radio-inner,
+.custom-modal-header .close-x[data-v-bdedfc68]:hover,
+.h3-organization__plus.show-select .plus-icon:hover .h-icon-all-plus-o, .h3-organization__plus.show-select .plus-icon:hover .h-icon-all-retweet
+{
+    color: @primaryColor !important;
+    span{
+        color: @primaryColor !important;
+    }
+}
+
+.ant-input:hover, 
+.ant-input:focus,
+.ant-btn:not(.ant-btn-primary, .ant-btn-danger, .ant-btn[disabled], .ant-btn-link):hover,
+.ant-checkbox-wrapper:hover .ant-checkbox-inner, .ant-checkbox:hover .ant-checkbox-inner, .ant-checkbox-input:focus + .ant-checkbox-inner,
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-radio-checked::after,
+.ant-checkbox-checked::after,
+.ant-radio-wrapper:hover .ant-radio, .ant-radio:hover .ant-radio-inner, .ant-radio-input:focus + .ant-radio-inner,
+.has-form-border .h3-panel > .h3-panel-body > .ant-row-flex > .ant-col > div.field > div.field__control div.ant-input-number-focused, .has-form-border .h3-panel > .h3-panel-body > .ant-row-flex > .ant-col > div.field > div.field__control div.h3-input-number-focused, .has-form-border .h3-panel > .h3-panel-body > .ant-row-flex > .ant-col > div.field > div.field__control div.ant-select-focused, .has-form-border .h3-panel > .h3-panel-body > .ant-row-flex > .ant-col > div.field > div.field__control div.h3-textarea_focus,
+.ant-radio-checked .ant-radio-inner,
+.ant-radio-checked::after,
+.ant-pagination-item-active,
+.ant-pagination-options-quick-jumper input:hover,
+.ant-select-selection:hover,
+.h3-organization__plus.show-select .plus-icon:hover,
+.ant-btn.ant-btn-primary:hover,
+.ant-btn:not(.ant-btn-primary, .ant-btn-danger, .ant-btn[disabled], .ant-btn-link):active, .ant-btn:not(.ant-btn-primary, .ant-btn-danger, .ant-btn[disabled], .ant-btn-link):focus
+{
+    border-color: @borderColor !important;
+}
+
+
+
+.ant-checkbox-checked .ant-checkbox-inner,
+.ant-radio-inner::after,
+.ant-switch-checked,
+.ant-tabs-ink-bar,
+.workflow-menu .ant-menu-item::after,
+.ant-checkbox-indeterminate .ant-checkbox-inner::after
+{
+    background-color: @highlightColor !important;
+}
+
+.ant-input:focus,
+.ant-select-focused .ant-select-selection, .ant-select-selection:focus, .ant-select-selection:active
+{
+    box-shadow: 0 0 0 2px @shadowColor;
+}
+
+.ant-btn-primary {
+    background: @highlightColor !important;
+    border-color: @highlightColor !important;
+    
+    &:hover {
+      border: 1px solid @highlightColor !important;
+    }
+}
+.ant-tabs-nav .ant-tabs-tab-active,
+.grid-navigation .header .manage-app
+{
+    color: @primaryColor !important;
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus{
+    background: @highlightColor !important;
+}
+
+.ant-input-affix-wrapper:hover .ant-input:not(.ant-input-disabled) {
+    color: #111218 !important;
+}
+
+.ant-btn[disabled],
+.ant-btn[disabled]:hover,
+.ant-btn[disabled]:focus,
+.ant-btn[disabled]:active {
+    border-color: #d4d5d6 !important;
+    background: #F1F2F6 !important;
+    color: rgba(17,18,24,0.25) !important;
+}

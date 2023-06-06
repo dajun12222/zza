@@ -1,0 +1,19 @@
+/*
+禁止修改!此文件是产品代码的一部分，后续可能变更或者不再开放。
+若有问题，请参考前端相关二开文档。
+*/
+@import '~codemirror/lib/codemirror.css';
+@import '~codemirror/addon/scroll/simplescrollbars.css';
+@import '~codemirror/addon/hint/show-hint.css';
+@import './formula-theme.less';
+
+@formulaEditorPrefix: shared-formula-editor;
+
+.@{formulaEditorPrefix} {
+  height: 100%;
+  width: 100%;
+  font-size: 13px;
+  &&--disabled * {
+    cursor: default;
+  }
+}

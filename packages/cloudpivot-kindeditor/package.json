@@ -1,0 +1,14 @@
+{
+	"name": "cloudpivot-kindeditor",
+	"version": "6.11.1000",
+	"description": "云枢6.0公共依赖库-富文本编辑器组件",
+	"private": false,
+	"main": "./src/kindeditor-all.js",
+	"license": "MIT",
+	"files": [
+		"src"
+	],
+	"publishConfig": {
+		"registry": "https://nexus01.authine.cn/repository/npm-cloudpivot/"
+	}
+}

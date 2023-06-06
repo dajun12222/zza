@@ -1,0 +1,15 @@
+{
+ "name": "cloudpivot-form",
+ "version": "6.13.1001",
+ "description": "云枢6.0公共依赖库-表单模块",
+ "private": false,
+ "main": "./index.ts",
+ "scripts": {
+  "build": "rimraf dist/ && tsc"
+ },
+ "license": "MIT",
+ "publishConfig": {
+  "registry": "https://nexus01.authine.cn/repository/npm-cloudpivot/"
+ },
+ "gitHead": "487affe9857196dea10da233b04a05c3399750e1"
+}

@@ -1,0 +1,218 @@
+{
+  "RowMenu1": {
+    "layout": {
+      "left": 2,
+      "top": 0,
+      "width": 10,
+      "height": 9
+    },
+    "id": "RowMenu1",
+    "type": "RowMenu",
+    "name": "",
+    "parentId": "defaultPortalDashboard",
+    "childIds": [],
+    "cloneable": true,
+    "removable": true,
+    "immutable": false,
+    "version": "",
+    "props": {
+      "navigator": [{
+        "icon": "h-icon-all-workbench",
+        "title": "工作台",
+        "actionType": "portalPage",
+        "portalPage": "defaultPortalDashboard",
+        "isDefaultWorkbench": true,
+        "openMode": "curPage",
+        "length": 6
+      }, {
+        "icon": "h-icon-all-a-technologicalprocess",
+        "title": "流程中心",
+        "actionType": "portalPage",
+        "portalPage": "defaultWorkflowCenter",
+        "URL": "",
+        "openMode": "curPage",
+        "length": 8
+      }, {
+        "icon": "h-icon-all-application",
+        "title": "应用列表",
+        "actionType": "portalPage",
+        "portalPage": "defaultApplicationList",
+        "URL": "",
+        "openMode": "curPage",
+        "length": 8
+      }]
+    },
+    "eventHandlers": {},
+    "bindings": {}
+  },
+  "ColMenu2": {
+    "layout": {
+      "left": 0,
+      "top": 0,
+      "width": 2,
+      "height": 115
+    },
+    "id": "ColMenu2",
+    "type": "ColMenu",
+    "name": "",
+    "parentId": "defaultPortalDashboard",
+    "childIds": [],
+    "cloneable": true,
+    "removable": true,
+    "immutable": false,
+    "version": "",
+    "props": {
+      "navigator": [{
+        "icon": "h-icon-all-workbench",
+        "title": "工作台",
+        "actionType": "portalPage",
+        "portalPage": "defaultPortalDashboard",
+        "isDefaultWorkbench": true,
+        "openMode": "curPage",
+        "length": 6
+      }, {
+        "icon": "h-icon-all-a-technologicalprocess",
+        "title": "流程中心",
+        "actionType": "portalPage",
+        "portalPage": "defaultWorkflowCenter",
+        "URL": "",
+        "openMode": "curPage",
+        "length": 8
+      }, {
+        "icon": "h-icon-all-application",
+        "title": "应用列表",
+        "actionType": "portalPage",
+        "portalPage": "defaultApplicationList",
+        "URL": "",
+        "openMode": "curPage",
+        "length": 8
+      }]
+    },
+    "eventHandlers": {},
+    "bindings": {}
+  },
+  "Carousel1": {
+    "layout": {
+      "left": 2,
+      "top": 9,
+      "width": 9,
+      "height": 37
+    },
+    "id": "Carousel1",
+    "type": "Carousel",
+    "name": "",
+    "parentId": "defaultPortalDashboard",
+    "childIds": [],
+    "cloneable": true,
+    "removable": true,
+    "immutable": false,
+    "version": "",
+    "props": {
+      "backgroundColor": "rgba(255,255,255,1)",
+      "borderRadius": "medium",
+      "borderStyle": "none",
+      "borderThickness": 1,
+      "borderColor": "#E4E7EE",
+      "photos": [{
+        "name": "图片1",
+        "tempUrl": "",
+        "openType": "_self",
+        "gotoType": 3,
+        "app": "",
+        "bizModel": "",
+        "linkUrl": "https://www.yuque.com/skwme4/hyk0u0/tyozqyvl3i318uw7",
+        "gotoPage": "defaultPortalDashboard"
+      }],
+      "autoplay": true
+    },
+    "eventHandlers": {},
+    "bindings": {}
+  },
+  "MyApplication1": {
+    "layout": {
+      "left": 2,
+      "top": 46,
+      "width": 9,
+      "height": 32
+    },
+    "id": "MyApplication1",
+    "type": "MyApplication",
+    "name": "",
+    "parentId": "defaultPortalDashboard",
+    "childIds": [],
+    "cloneable": false,
+    "removable": true,
+    "immutable": false,
+    "version": "",
+    "props": {
+      "backgroundColor": "rgba(255,255,255,1)",
+      "backgroundImg": "",
+      "borderRadius": "medium",
+      "borderStyle": "none",
+      "borderThickness": 1,
+      "borderColor": "#E4E7EE",
+      "textColor": "#111218",
+      "textThickness": "normal"
+    },
+    "eventHandlers": {},
+    "bindings": {}
+  },
+  "MyUnfinished1": {
+    "layout": {
+      "left": 2,
+      "top": 78,
+      "width": 5,
+      "height": 37
+    },
+    "id": "MyUnfinished1",
+    "type": "MyUnfinished",
+    "name": "",
+    "parentId": "defaultPortalDashboard",
+    "childIds": [],
+    "cloneable": false,
+    "removable": true,
+    "immutable": false,
+    "version": "",
+    "props": {
+      "backgroundColor": "rgba(255,255,255,1)",
+      "backgroundImg": "",
+      "borderRadius": "medium",
+      "borderStyle": "none",
+      "borderThickness": 1,
+      "borderColor": "#E4E7EE",
+      "textColor": "#111218",
+      "textThickness": "normal"
+    },
+    "eventHandlers": {},
+    "bindings": {}
+  },
+  "ShortcutList1": {
+    "layout": {
+      "left": 7,
+      "top": 78,
+      "width": 4,
+      "height": 37
+    },
+    "id": "ShortcutList1",
+    "type": "ShortcutList",
+    "name": "",
+    "parentId": "defaultPortalDashboard",
+    "childIds": [],
+    "cloneable": false,
+    "removable": true,
+    "immutable": false,
+    "version": "",
+    "props": {
+      "backgroundColor": "rgba(255,255,255,1)",
+      "backgroundImg": "",
+      "borderRadius": "medium",
+      "borderStyle": "none",
+      "borderThickness": 1,
+      "borderColor": "#E4E7EE",
+      "textColor": "#111218",
+      "textThickness": "normal"
+    },
+    "eventHandlers": {},
+    "bindings": {}
+  }
+}
